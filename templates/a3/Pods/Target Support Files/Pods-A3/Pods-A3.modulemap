@@ -1,0 +1,6 @@
+framework module Pods_A3 {
+  umbrella header "Pods-A3-umbrella.h"
+
+  export *
+  module * { export * }
+}

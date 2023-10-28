@@ -11,7 +11,7 @@ class FeedVC: UIViewController {
     
     // MARK: - Properties (view)
     
-    private let tableView = UITableView()
+    private var collectionView: UICollectionView!
     
     // MARK: - Properties (data)
     
@@ -24,44 +24,65 @@ class FeedVC: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         view.backgroundColor = UIColor.a3.offWhite
         
-        setupTableView()
+        setupCollectionView()
     }
     
     // MARK: - Set Up Views
     
-    private func setupTableView() {
-        tableView.backgroundColor = UIColor.a3.offWhite
-        tableView.separatorStyle = .none
+    private func setupCollectionView() {
+        collectionView.backgroundColor = UIColor.a3.offWhite
         
         let padding: CGFloat = 24   // Use this constant when configuring constraints
         
-        // TODO: Set Up TableView
+        // TODO: Set Up CollectionView
     }
     
 }
 
-// MARK: - UITableViewDataSource
+// MARK: - UICollectionViewDelegate
 
-extension FeedVC: UITableViewDataSource {
+extension FeedVC: UICollectionViewDelegate { }
+
+// MARK: - UICollectionViewDataSource
+
+extension FeedVC: UICollectionViewDataSource {
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         // TODO: Return the cells for each section
         // HINT: Use `indexPath.section` with an if statement
         
-        return UITableViewCell()
+        return UICollectionViewCell()
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // TODO: Return the number of rows for each section
-        // HINT: Use `indexPath.section` with an if statement
+        // HINT: Use `section` with an if statement
         
         return 0 // Replace this line
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
         // TODO: Return the number of sections in this table view
         
         return 0 // Replace this line
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        // TODO: Return the inset for the spacing between the two sections
+        
+        return UIEdgeInsets() // Replace this line
+    }
+    
+}
+
+// MARK: - UICollectionViewDelegateFlowLayout
+
+extension FeedVC: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        // TODO: Return the size for each cell per section
+        // HINT: Use `indexPath.section` with an if statement
+        return CGSize() // Replace this line
     }
     
 }

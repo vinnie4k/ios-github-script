@@ -1,5 +1,5 @@
 //
-//  CreatePostTableViewCell.swift
+//  CreatePostCollectionViewCell.swift
 //  A3
 //
 //  Created by Vin Bui on 7/9/23.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CreatePostTableViewCell: UITableViewCell {
+class CreatePostCollectionViewCell: UICollectionViewCell {
     
     // MARK: - Properties (view)
     
@@ -16,16 +16,15 @@ class CreatePostTableViewCell: UITableViewCell {
     
     // MARK: - Properties (data)
     
-    static let reuse: String = "CreatePostTableViewCellReuse"
+    static let reuse: String = "CreatePostCollectionViewCellReuse"
     
     // MARK: - init
     
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
+    override init(frame: CGRect) {
+        super.init(frame: frame)
         
         backgroundColor = UIColor.a3.white
         layer.cornerRadius = 16
-        selectionStyle = .none
         
         setupTextField()
         setupPostButton()

@@ -13,6 +13,9 @@ class NetworkManager {
     static let shared = NetworkManager()
     
     private init() { }
+        
+    /// Endpoint for dev server
+    private let devEndpoint: String = "https://chatdev-wuzwgwv35a-ue.a.run.app"
     
     // MARK: - Requests
     

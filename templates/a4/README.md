@@ -1,3 +1,3 @@
 # A4: ChefOS
 
-This project uses CocoaPods. If you do not have CocoaPods installed, install it with `sudo gem install cocoapods`. Then, install dependencies with `pod install`.
+You must have Swift 5, iOS 13.0+, and Xcode 12.0+ to run this app.

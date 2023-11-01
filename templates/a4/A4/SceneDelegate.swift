@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  A4
 //
-//  Created by Vin Bui on 8/2/23.
+//  Created by Vin Bui on 10/31/23.
 //
 
 import UIKit
@@ -17,19 +17,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         // 2. Create a new UIWindow and pass in a UIWindowScene
         let window = UIWindow(windowScene: windowScene)
-        
+
         // 3. Create a view hierarchy programmatically
         let rootVC = ViewController()
         let navController = UINavigationController(rootViewController: rootVC)
-        
+
         // 4. Set the navigation controller as the window's root view controller
         window.rootViewController = navController
-        
+
         // 5. Set the window and call makeKeyAndVisible()
         self.window = window
         window.makeKeyAndVisible()
     }
-    
+
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
         // This occurs shortly after the scene enters the background, or when its session is discarded.
@@ -58,6 +58,4 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
 
-
 }
-

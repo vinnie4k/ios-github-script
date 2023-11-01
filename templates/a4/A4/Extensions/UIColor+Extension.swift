@@ -2,17 +2,17 @@
 //  UIColor+Extension.swift
 //  A4
 //
-//  Created by Vin Bui on 8/2/23.
+//  Created by Vin Bui on 10/31/23.
 //
 
 import UIKit
 
 extension UIColor {
-    
+
     // YOU MAY EDIT THIS FILE IF YOU ARE ATTEMPTING EXTRA CREDIT
-    
+
     static let a4 = A4()
-    
+
     struct A4 {
         let black = UIColor.black
         let offWhite = UIColor(red: 240/255, green: 240/255, blue: 240/255, alpha: 1)

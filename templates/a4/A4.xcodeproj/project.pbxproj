@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2E07F6082AF1CFFD00395214 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2E07F6072AF1CFFD00395214 /* Alamofire */; };
 		2E07F60B2AF1D01E00395214 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2E07F60A2AF1D01E00395214 /* SnapKit */; };
-		2E07F60D2AF1D01E00395214 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 2E07F60C2AF1D01E00395214 /* SnapKit-Dynamic */; };
 		2E07F6102AF1D03B00395214 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 2E07F60F2AF1D03B00395214 /* SDWebImage */; };
 		2E07F6122AF1D03B00395214 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2E07F6112AF1D03B00395214 /* SDWebImageMapKit */; };
 		2E07F6152AF1D05700395214 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E07F6142AF1D05700395214 /* UIFont+Extension.swift */; };
@@ -42,7 +41,6 @@
 				2E07F6122AF1D03B00395214 /* SDWebImageMapKit in Frameworks */,
 				2E07F60B2AF1D01E00395214 /* SnapKit in Frameworks */,
 				2E07F6102AF1D03B00395214 /* SDWebImage in Frameworks */,
-				2E07F60D2AF1D01E00395214 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,7 +105,6 @@
 			packageProductDependencies = (
 				2E07F6072AF1CFFD00395214 /* Alamofire */,
 				2E07F60A2AF1D01E00395214 /* SnapKit */,
-				2E07F60C2AF1D01E00395214 /* SnapKit-Dynamic */,
 				2E07F60F2AF1D03B00395214 /* SDWebImage */,
 				2E07F6112AF1D03B00395214 /* SDWebImageMapKit */,
 			);
@@ -425,11 +422,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2E07F6092AF1D01E00395214 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
-		};
-		2E07F60C2AF1D01E00395214 /* SnapKit-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2E07F6092AF1D01E00395214 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = "SnapKit-Dynamic";
 		};
 		2E07F60F2AF1D03B00395214 /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;

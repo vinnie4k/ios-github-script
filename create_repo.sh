@@ -4,7 +4,7 @@
 create_repo () {
     REPO_NAME="$1-$2"
     DIRECTORY_PATH="$2/$REPO_NAME"
-    ORG_NAME="cs1998-601-fa23"
+    ORG_NAME="${ORG_NAME}"
 
     echo "Copying the template in $DIRECTORY_PATH..."
     cp -a ./templates/$2 $DIRECTORY_PATH

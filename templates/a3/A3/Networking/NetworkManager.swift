@@ -15,7 +15,7 @@ class NetworkManager {
     private init() { }
 
     /// Endpoint for dev server
-    private let devEndpoint: String = "https://chatdev-wuzwgwv35a-ue.a.run.app"
+    private let devEndpoint: String = "https://ios-course-backend.cornellappdev.com"
 
     // MARK: - Requests
 

@@ -8,7 +8,10 @@ We will be using `direnv` to import the environment variables. To install `diren
 ```bash
 brew install direnv
 ```
-Reach out to me for the `.envrc` file. Make sure to change the `ORG_NAME` and `GITHUB_API_TOKEN` values in the `.envrc` file which will be placed in the root directory. You can find your API token by logging into the Enterprise GitHub and generating a new Personal Access Token with every privilege. See [this](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
+1. Create a copy of `.envrc_template` and rename it to `.envrc` in the root directory.
+2. Change `ORG_NAME` and `GITHUB_API_TOKEN` values in the `.envrc` file which will be placed.
+  - The org name for FA23 is `cs1998-601-fa23`. You can just replace the semester and year.
+  - You can find your API token by logging into the Enterprise GitHub and generating a new Personal Access Token with every privilege. See [this](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
 
 
 ### Python Packages
@@ -40,7 +43,7 @@ bash create_repo.sh <filename> <assignment>
 # You should use either a1, a2, a3, or a4
 ```
 
-**For A2, A3, and A4, use the following format:**
+**For A2, A3, and A4 (two partners), use the following format:**
 
 ```bash
 vdb23-rs929

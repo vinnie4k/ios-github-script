@@ -1,0 +1,3 @@
+export GITHUB_URL=https://github.coecis.cornell.edu/api/v3
+export GITHUB_API_TOKEN=[API_TOKEN_HERE]
+export ORG_NAME=[ORG_NAME_HERE]
